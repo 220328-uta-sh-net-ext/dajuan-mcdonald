@@ -12,8 +12,8 @@ echo " If Buzz, the number is divisible by 5"
 echo " "
 echo " if FizzBuzz, the number is divisible by 3 and 5"
 echo " "
-echo " otherwise the output will just be a number...or nothing!"
-
+echo " otherwise the output will just be ... nothing!"
+echo date
 
 function fizzbuzz() {
 
@@ -23,8 +23,9 @@ FizzBuzz=15
 read -p "Enter a number between 1 and 100: " target
 
 for ((i=1; i < $target; i++));
+  
     do 
-        if (( $i % $FizzBuzz == 0 ));
+        if (( $i % $FizzBuzz == 0  ));
     then 
         echo "FizzBuzz";
 
@@ -38,7 +39,7 @@ for ((i=1; i < $target; i++));
 
     else
 
-        echo " - ";
+        echo " ... ";
         fi;
 done;
 }
