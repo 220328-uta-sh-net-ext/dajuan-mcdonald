@@ -14,6 +14,8 @@ echo " otherwise the output will just be a number...or nothing!"
 read -p "Enter a number between 1 and 100: " target
 
 
+function fizzbuzz {
+
 Fizz=3
 Buzz=5
 FizzBuzz=15
@@ -37,3 +39,6 @@ for ((i=1; i < $target; i++));
         echo " - ";
         fi;
 done;
+}
+
+fizzbuzz
