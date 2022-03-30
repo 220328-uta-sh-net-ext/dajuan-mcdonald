@@ -103,3 +103,17 @@ Those commands are great. Suppose you wanted to get a list of *all* the commands
 So, what about the shell [environment]('https://www.gnu.org/software/bash/manual/html_node/Environment.html') ? How does it relate to commands?
 
 Well, it turns out that the shell can *scan* its own environment and can even create a parameter for any familiar names that it finds *within* its environment. The commands `inherit` the shell environment.
+
+
+
+
+
+
+Training link: https://revature.zoom.us/j/99972266541?
+
+
+
+pwd = ZGxKeTQwNjFCem8vdW1tWHhEZUQ0QT09
+
+
+ZGxKeTQwNjFCem8vdW1tWHhEZUQ0QT09
