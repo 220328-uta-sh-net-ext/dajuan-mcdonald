@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+echo $(date)
+
+echo " "
 
 echo "This program takes input of integer and outputs either string or integer: "
 echo " "
@@ -13,16 +16,17 @@ echo " "
 echo " if FizzBuzz, the number is divisible by 3 and 5"
 echo " "
 echo " otherwise the output will just be ... nothing!"
-echo date
 
 function fizzbuzz() {
 
 Fizz=3
 Buzz=5
 FizzBuzz=15
-read -p "Enter a number between 1 and 100: " target
 
-for ((i=1; i < $target; i++));
+
+read -p "Enter a number between 1 and 100: " target "\n"
+
+for ((i=1; i < $target+1; i++));
   
     do 
         if (( $i % $FizzBuzz == 0  ));
@@ -45,4 +49,3 @@ done;
 }
 
 fizzbuzz
-
