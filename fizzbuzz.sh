@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
+
 echo $(date)
 
 echo " "
 
-echo "This program takes input of integer and outputs either string or integer: "
+echo " This program takes input of integer and outputs either string or integer: "
 echo " "
-echo "The range of 1 to your input determins if the output will be either: "
+echo " The range of 1 to your input determins if the output will be either: "
 echo " "
 echo " Fizz, Buzz, or FizzBuzz"
 echo " "
@@ -43,7 +44,7 @@ for ((i=1; i < $target+1; i++));
 
     else
 
-        echo " ... ";
+        echo " $i...$! ";
         fi;
 done;
 }
