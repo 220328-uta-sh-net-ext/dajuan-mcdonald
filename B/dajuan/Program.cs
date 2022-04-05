@@ -91,3 +91,10 @@ Console.WriteLine("Second decrement: " + variable1); // 2
 variable1--;
 Console.WriteLine("Third decrement: " + variable1); // 1
 
+//fehrenheit to celcius
+int fahrenheit = 94;
+
+decimal toCelsius = ((decimal)fahrenheit - (decimal)32) * 5/9;
+
+Console.WriteLine(toCelsius);
+
