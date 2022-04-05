@@ -40,3 +40,54 @@ Console.WriteLine((sum % product));
 decimal newQuotient = ((decimal)sum / (decimal)product);
 
 
+/*
+ *
+ * While there is no 'exponent' operator in C#,
+ * you can use the System.Math.Pow() method from the .NET
+ * Class Library.
+ *
+ * The order of operations in C# follows the PEMDAS acronym
+ *
+ *
+ * */
+int value1 = 3 + 4 * 5; // 23
+int value2 = (3 + 4) * 5; // 35
+
+
+// Increment and Decrement Values
+
+int value = 0;
+value += 5;
+
+value++;
+
+Console.WriteLine(value); // should be 6
+
+
+/*
+ *Compound assignment operators:
+ += , -=, *=, ++, -- 
+ *
+ *
+ * */
+
+int variable1 = 1;
+
+variable1 = variable1 + 1;
+Console.WriteLine("First increment: " + variable1); // 2
+
+variable1 += 1;
+Console.WriteLine("Second increment: " + variable1); // 3
+
+variable1++;
+Console.WriteLine("Third increment: " + variable1); // 4
+
+variable1 = variable1 - 1;
+Console.WriteLine("First decrement: " + variable1); // 3
+
+variable1 -=1;
+Console.WriteLine("Second decrement: " + variable1); // 2
+
+variable1--;
+Console.WriteLine("Third decrement: " + variable1); // 1
+
