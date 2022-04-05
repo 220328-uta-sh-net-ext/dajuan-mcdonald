@@ -1,0 +1,10 @@
+Positioning the increment and decrement operators:
+
+
+Both the increment and decrement operators have an interesting quality -- 
+depending on their position, they perform their operation before or after 
+they retrieve their value. In other words, if you use the operator before 
+the value as in `++value`, then the increment will happen before the value 
+is retrieved. 
+
+Likewise, `value++` will increment the value after the value has been retrieved.
