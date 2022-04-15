@@ -1,15 +1,57 @@
 using System;
+namespace Restaurant
+{
 
+
+//BL...
 namespace RestaurantBL
 {
     public class Restaurant
     {
-
+        
 
     }
+}
+    
 
-    namespace RestaurantModels
-    {
+//UI...
+namespace RestaurantUI
+{
+        public interface RestaurantUI
+        {
+            void ShowRestaurantDetails()
+            {
+                Console.WriteLine(@$"
+
+                Restaurant Details: "
+                     
+                );
+            }
+
+
+        }    
+    
+}    
+
+
+//DL...
+namespace RestaurantDL
+{
+        class RestaurantDL
+        {
+
+
+
+        }
+    
+
+}
+
+//MODEL...
+namespace RestaurantModels
+{
+// all operations -> as methods/behaviors
+    
         class RestaurantModels
         {
             public string CompanyName
@@ -52,37 +94,8 @@ namespace RestaurantBL
 
 
         }
-    }
-
-    namespace RestaurantUI
-    {
-        public interface RestaurantUI
-        {
-            void ShowRestaurantDetails()
-            {
-                Console.WriteLine(@$"
-
-                Restaurant Details: "
-                     
-                );
-            }
-
-
-        }
-
-    namespace RestaurantDL
-    {
-        class RestaurantDL
-        {
-
-
-
-        }
-
-        }
-
-    }
-
+    
+}
     class Program
     {
         public static void  Main()
@@ -90,11 +103,8 @@ namespace RestaurantBL
             
             Console.WriteLine("Restaurant");
             
+            
 
         }
     }
-
-
 }
-
-// all operations -> as methods/behaviors
