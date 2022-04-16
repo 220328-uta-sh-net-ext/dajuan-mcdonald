@@ -17,19 +17,42 @@ namespace RestaurantBL
 //UI...
 namespace RestaurantUI
 {
-        public interface RestaurantUI
+    class RestaurantMenu : IRestaurantMenu
+    {
+        public void Prompt()
         {
-            void ShowRestaurantDetails()
-            {
-                Console.WriteLine(@$"
+            Console.WriteLine(@$"
+                Welcome to Revature Restaurant Portal!
 
-                Restaurant Details: "
-                     
-                );
-            }
+                Let's get started....
+
+                [options]
+
+                - Press <2> to search
+                - Press <1> to add your restaurant
+                - Press <0> to exit
+            ");
+        }
+        
+    public string GetUserInput()
+    {
+        string userInput = Console.ReadLine();
+
+        return RestaurantMenu;
+    }
+
+    public interface IRestaurantMenu
+    {
+        <summary> Prompt user for input </summary>
+        void Prompt();
+
+        <summary> Record user input </summary>
+        void GetUserInput();
+
+    }
 
 
-        }    
+    }
     
 }    
 
@@ -75,11 +98,8 @@ namespace RestaurantModels
 
             public string CompanyDetails
             {
-                get => @$"
-                    Company Name: {companyName}
-
-                    Company Rating: {companyRating}
-                    ";
+                get => companyName;
+                get => companyRating;
             }
 
             //initialize an object cause we can't have any null values
