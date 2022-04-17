@@ -59,3 +59,16 @@ Some of the capabilities that .NET languages support:
 ## SDK and runtimes
 The .NET SDK is a set of libraries and tools for developing and running .NET applications.
 
+
+## Terminology
+    - Common Language Runtime (CLR)
+        {The execution environment for a managed program. The OS is part of the runtime evironment but isn't part of the .NET runtime.}
+
+    - .NET runtime 
+        {The CLR and runtime libraries, which together provide support for running framework-dependent apps.}
+
+    - Runtime Identifier (RID)
+        {The OS platform and CPU architecture that a .NET app runs on.}
+
+    - SDK
+        {A collection of tools and libraries that you download and install to develop and run .NET apps. Includes the CLI, MSBuild, the .NET runtime, and other components.}
