@@ -100,6 +100,7 @@ namespace RestaurantModels
     
         public class RestaurantModels
         {
+            int[] ratings = {0, 1, 2, 3, 4, 5};
             public string CompanyName
             {
                get => companyName;
@@ -115,7 +116,18 @@ namespace RestaurantModels
             public int CompanyRating
             {
                    get => companyRating;
-                   set => companyRating = value;
+                   set {
+                       if(value < ratings[0])
+                        {
+                            throw new ArgumentNullException("Rating must not be null");
+                        }
+
+                        if (value > 6)
+                            {
+                                throw new ArgumentOutOfRangeException("Rating must be 1-5");
+                            }
+                        companyRating = value;
+                   }
             }
             private int companyRating;
 
