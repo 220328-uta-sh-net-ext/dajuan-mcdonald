@@ -25,10 +25,20 @@ namespace RestaurantUI
         void GetUserInput();
 
     }
-    class RestaurantMenu : IRestaurantMenu
+    public class RestaurantMenu : IRestaurantMenu
     {
-        public void Prompt()
+        private string companyName;
+        private int companyRating;
+        private int op;
+
+        public RestaurantMenu()
         {
+            op = 0;
+        }
+
+        public RestaurantMenu(int option)
+        {
+
             Console.WriteLine(@$"
                 Welcome to Revature Restaurant Portal!
 
@@ -40,6 +50,9 @@ namespace RestaurantUI
                 - Press <1> to add your restaurant
                 - Press <0> to exit
             ");
+
+            opt = option;
+
         }
 
     public void GetUserInput()
@@ -48,9 +61,14 @@ namespace RestaurantUI
 
     }
 
-    
+    public void showDetails()
+    {
+        Console.WriteLine(@$"
+            Company Name: {companyName}
 
-
+            Company Rating: {companyRating}
+        ");
+    }
 
     }
     
@@ -75,7 +93,7 @@ namespace RestaurantModels
 {
 // all operations -> as methods/behaviors
     
-        class RestaurantModels
+        public class RestaurantModels
         {
             public string CompanyName
             {
@@ -101,7 +119,7 @@ namespace RestaurantModels
             //initialize an object cause we can't have any null values
             
      
-        public void LocalShop()
+        public RestaurantModels()
         {
             CompanyName = "Coscos";
             CompanyRating = 4;
