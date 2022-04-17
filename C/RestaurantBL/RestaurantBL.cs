@@ -33,7 +33,12 @@ namespace RestaurantUI
 
         public RestaurantMenu()
         {
-            op = 0;
+            // opt = 0;
+        }
+
+        public void Prompt()
+        {
+            Console.WriteLine("Prompt Interface");
         }
 
         public RestaurantMenu(int option)
@@ -51,7 +56,7 @@ namespace RestaurantUI
                 - Press <0> to exit
             ");
 
-            opt = option;
+            // opt = option;
 
         }
 
