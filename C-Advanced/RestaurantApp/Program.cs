@@ -5,11 +5,11 @@ namespace RestaurantApp
     public class Restaurant
     {
         private readonly string m_restaurantName;
-        private int m_rating;
+        private double m_rating;
 
         private Restaurant() {}
 
-        public Restaurant(string restaurantName, int restaurantRating)
+        public Restaurant(string restaurantName, double restaurantRating)
         {
             m_restaurantName = restaurantName;
             m_rating = restaurantRating;
@@ -20,12 +20,12 @@ namespace RestaurantApp
             get => m_restaurantName;
         }
 
-        public int Rating 
+        public double Rating 
         {
             get => m_rating;
         }
 
-        public void Rate(int rating)
+        public void Rate(double rating)
         {
             m_rating += rating;
         }
