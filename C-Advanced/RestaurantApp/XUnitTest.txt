@@ -1,0 +1,30 @@
+using System;
+using Xunit;
+using Xunit.Sdk;
+
+namespace Restaurant.Test
+{
+    public class A_Exceptions
+    {
+        string m_customMessage = "Custom Exception Mesage";
+
+        [Fact]
+        public void shouldRecordAnException()
+        {
+            Exception ex = Record.Exception(() => ThrowAnError());
+            Assert.Equal(m_customMessage, ex.Mesage);
+
+
+        }
+
+        private void ThrowAnError()
+        {
+            throw new InvalidOperationException(m_customMessage);
+        }
+    }
+
+    public class A1_Exceptions
+    {
+        public bool UserChoice()
+    }
+}
