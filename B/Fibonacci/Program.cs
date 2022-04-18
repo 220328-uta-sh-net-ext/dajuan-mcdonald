@@ -1,4 +1,4 @@
-﻿int result = Fibonacci(5);
+﻿int result = Fibonacci(-3);
 System.Console.WriteLine(result);
 
 static int Fibonacci(int n)
