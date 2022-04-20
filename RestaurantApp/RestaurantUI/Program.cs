@@ -1,12 +1,26 @@
 ﻿using System;
-namespace RestaurantUI;
+using RestaurantUI;
 
-public class MainMenuUI
+bool prompt = true;
+string promptStatement = "Make a choice !";
+IRestMenu restMenu = new MainMenu();
+
+while (prompt)
 {
-    public static void Main()
+    restMenu.Display();
+    string response = restMenu.GetUserChoice();
+
+    switch (response)
     {
-        Console.WriteLine("Restaurant UI");
-        
+        case "Exit":
+            prompt = false;
+            break;
+
     }
 }
+
+
+
+
+
 
