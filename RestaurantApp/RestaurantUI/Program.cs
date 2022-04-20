@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+namespace RestaurantUI;
+
+public class MainMenuUI
+{
+    public static void Main()
+    {
+        Console.WriteLine("Restaurant UI");
+        
+    }
+}
+
