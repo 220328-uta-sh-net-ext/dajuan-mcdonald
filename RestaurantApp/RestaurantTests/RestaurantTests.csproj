@@ -24,4 +24,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantDL\RestaurantDL.csproj" />
+    <ProjectReference Include="..\RestaurantModels\RestaurantModels.csproj" />
+  </ItemGroup>
+
 </Project>
