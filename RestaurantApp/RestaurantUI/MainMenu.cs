@@ -33,8 +33,20 @@ namespace RestaurantUI
                   {
                         case "0":
                               return "Exit";
+
+                        case "1":
+                              return "AddRating";
+
+                        case "2":
+                              return "AddRestaurant";
+
+                        case "3":
+                              return "ShowAllListings";
+
                         default:
                               return "MainMenu";
+
+
 
                   }
             }
