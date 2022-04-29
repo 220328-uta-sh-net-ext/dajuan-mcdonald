@@ -5,31 +5,33 @@ namespace Tests;
 
 public class UnitTest1
 {
-    [Fact]
+    [Fact(Skip="Test UserName Is Called skipped.")]
     public void TestUserNameIsCalled()
     {
+        var userNameService = new Service();
+        bool result = userNameService.
 
     }
 
-    [Fact]
+    [Fact(Skip="Test Add Review Is Called Once skipped")]
     public void TestAddReviewIsCalledOnce()
     {
 
     }
 
-    [Fact]
+    [Fact(Skip="Test Add New User Is Called Once skipped")]
     public void TestAddNewUserIsCalledOnce()
     {
 
     }
 
-    [Fact]
+    [Fact(Skip="Test Search Business Method Is Called Once skipped")]
     public void TestSearchBusinessMethodIsCalledOnce()
     {
 
     }
 
-    [Fact]
+    [Fact(Skip="Test Search Business By Is Called Once skipped")]
     public void TestSearchBusinessByIsCalledOnce()
     {
 
