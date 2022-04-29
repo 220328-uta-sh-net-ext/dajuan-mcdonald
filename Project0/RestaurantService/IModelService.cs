@@ -9,9 +9,4 @@ namespace RestaurantService
         void AddReview();
 
     }
-    class IModelService : IServiceInterface
-    {
-        
-
-    }
 }
