@@ -1,0 +1,35 @@
+namespace RestaurantService
+{
+    public interface IService
+    {
+        void CalculateAvg(List<decimal> ratings);
+
+
+    }
+
+    public interface IUser
+    {
+        void SearchUsers(string username);
+        void AddUser(string username, string userpass);
+
+    }
+
+    public interface IRestaurant
+    {
+        void AddRating(decimal rating);
+        
+        void SearchByRating(decimal rating);
+        void SearchByName(string name);
+        void PrintDetails(string resName);
+        
+
+    }
+
+    public interface IReview
+    {
+        void AddReview(string review);
+
+        void PrintReview(string review);
+    }
+}
+

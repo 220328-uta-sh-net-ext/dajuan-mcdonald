@@ -8,8 +8,7 @@ public class UnitTest1
     [Fact(Skip="Test UserName Is Called skipped.")]
     public void TestUserNameIsCalled()
     {
-        var userNameService = new Service();
-        bool result = userNameService.
+   
 
     }
 
