@@ -5,7 +5,7 @@ namespace RestaurantServiceBL
 {
    public class CalculateRatingAverage : IService
    {
-      private const decimal MAXRATING = 5.0;
+      private const decimal MAXRATING = 5.0M;
 
       public void CalculateAvg(List<decimal> ratings)
       {

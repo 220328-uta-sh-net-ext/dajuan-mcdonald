@@ -4,22 +4,21 @@ namespace RestaurantService
 
     public class User : IUser
     {
-        public string username { get; set; }
 
-        public string userpass { ; set;}
-    }
+        //public string username { get; set; }
 
+        //public string userpass {get; set; }
 
-    public void SearchUsers(string username)
+        public void SearchUsers(string username)
         {
-            get => userName;
+            //get => userName;
 
         }
 
     public void AddUser(string username, string userpass)
         {
-            set => userpass = value;
-            set => username = value;
+           // set => userpass = value;
+            //set => username = value;
 
         }
 
