@@ -35,4 +35,10 @@ public class UnitTest1
     {
 
     }
+
+    [Fact(Skip="Test Calculate Ratings Average Is Called Once skipped")]
+    public void TestCalculateAverageIsCalledOnce()
+    {
+
+    }
 }
