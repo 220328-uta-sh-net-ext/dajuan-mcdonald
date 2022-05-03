@@ -2,7 +2,7 @@ namespace RestaurantService
 {
     public interface IService
     {
-        void CalculateAvg(List<decimal> ratings);
+        void CalculateAvg(List<double> ratings);
 
 
     }

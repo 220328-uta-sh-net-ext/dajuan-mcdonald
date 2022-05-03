@@ -5,11 +5,23 @@ namespace RestaurantServiceBL
 {
    public class CalculateRatingAverage : IService
    {
-      private const decimal MAXRATING = 5.0M;
+      private const double MAXRATING = 5.0;
 
-      public void CalculateAvg(List<decimal> ratings)
+      public void CalculateAvg(List<double> ratings)
       {
-         //calculate ratings average
+         int size = 0;                                                       
+         double sum = 0;                                                    
+         double avg = sum / size;                                           
+
+          foreach (var rate in ratings)                                         
+           {                                                                   
+               size += 1;                                                       
+               sum += rate;                                                     
+                                                                                
+           }                                                                   
+                                                                                
+        System.Console.WriteLine(avg);
+         
       }
 
       // public virtual decimal GetAvgRatingScore(List<decimal> rates)
