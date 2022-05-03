@@ -16,9 +16,9 @@ namespace RestaurantService
 
     public interface IRestaurant
     {
-        void AddRating(decimal rating);
+        void AddRating(double rating);
         
-        void SearchByRating(decimal rating);
+        void SearchByRating(double rating);
         void SearchByName(string name);
         void PrintDetails(string resName);
         
