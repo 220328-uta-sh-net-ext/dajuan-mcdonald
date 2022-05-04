@@ -4,9 +4,10 @@ namespace RestaurantService
     {
        // var getValue {get; set;}
        // var setValue {get; set;}
-
-       // var getValue = System.Environment.GetEnvironmentVariable(variable [, Target]);
-
-       // var setValue = System.Environment.SetEnvironmentVariable(variable, value [, Target]);
+        
+       //Retrieves the value of an environment variable.
+       var getValue = System.Environment.GetEnvironmentVariable(variable [, Target]);
+       //Creates, modifies, or deletes an environment variable. 
+       var setValue = System.Environment.SetEnvironmentVariable(variable, value [, Target]);
     }
 }
