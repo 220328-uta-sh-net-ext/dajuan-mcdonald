@@ -1,10 +1,13 @@
 ﻿using RestaurantService;
+using RestaurantServiceUI;
 
 bool repeat = true;
-while(repeat)
-{
-    string reply = System.Console.ReadLine();
+ShowAdminOptions menu = new ShowAdminOptions();
 
+while (repeat)
+{   
+    menu.Display();
+    
     switch (reply)
     {
         case "Search":
