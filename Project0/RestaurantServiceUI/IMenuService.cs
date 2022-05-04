@@ -9,3 +9,11 @@ public interface IMenuService
     void ShowOptions();
 
 }
+
+///<summary>
+///terminal : primary admin display table
+///</summary>
+public interace IMenuAdmin
+{
+    void ShowAdminOptions();
+}
