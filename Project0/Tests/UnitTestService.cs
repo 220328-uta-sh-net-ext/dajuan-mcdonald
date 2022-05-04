@@ -5,40 +5,58 @@ namespace Tests;
 
 public class UnitTest1
 {
-    [Fact(Skip="Test UserName Is Called skipped.")]
-    public void TestUserNameIsCalled()
+
+    [Fact(Skip="Test Add Rating Is Called Once skipped.")]
+    public void TestAddRatingsIsCalled()
     {
-   
+        var request = new AddRating();
+
+        Restaurant response = 
+        
+        Assert.Equal(request.rating)
 
     }
+
+    
+    [Fact(Skip="Test Search Users Is Called skipped.")]
+    public void TestSearchUsersIsCalled()
+    {
+        var request = new SearchUsers();
+
+    }
+
 
     [Fact(Skip="Test Add Review Is Called Once skipped")]
     public void TestAddReviewIsCalledOnce()
     {
+        var request = new AddReview();
 
     }
 
     [Fact(Skip="Test Add New User Is Called Once skipped")]
     public void TestAddNewUserIsCalledOnce()
     {
+        var request = new AddUser();
 
     }
 
-    [Fact(Skip="Test Search Business Method Is Called Once skipped")]
-    public void TestSearchBusinessMethodIsCalledOnce()
+    [Fact(Skip="Test Search Business By Name Is Called Once skipped")]
+    public void TestSearchBusinessByNameIsCalledOnce()
     {
-
+        var response = new SearchByName();
     }
 
-    [Fact(Skip="Test Search Business By Is Called Once skipped")]
+    [Fact(Skip="Test Search Business By Rating Is Called Once skipped")]
     public void TestSearchBusinessByIsCalledOnce()
     {
+        var request = new SearchByRating();
 
     }
 
     [Fact(Skip="Test Calculate Ratings Average Is Called Once skipped")]
     public void TestCalculateAverageIsCalledOnce()
     {
+        var request = new CalculateAvg();
 
     }
 }
