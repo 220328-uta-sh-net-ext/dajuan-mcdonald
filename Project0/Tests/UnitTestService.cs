@@ -5,15 +5,16 @@ namespace Tests;
 
 public class UnitTest1
 {
+    [SqlServerData(@"juanmcdonald.database.windows.net"), Fact(Skip="Test Azure SQL Server is Active")]
+    public void TestConnectionIsCalled()
+    {
+        var dbRequest = new Connection();
+    }
 
     [Fact(Skip="Test Add Rating Is Called Once skipped.")]
     public void TestAddRatingsIsCalled()
     {
         var request = new AddRating();
-
-        Restaurant response = 
-        
-        Assert.Equal(request.rating)
 
     }
 
