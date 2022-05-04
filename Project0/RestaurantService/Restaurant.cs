@@ -3,7 +3,7 @@ namespace RestaurantService;
 public class Restaurant : IRestaurant
 {
     public string Name { get; set; }
-    public decimal Rating { get; set; }
+    public double Rating { get; set; }
     
     public string Review { get; set; }
 
