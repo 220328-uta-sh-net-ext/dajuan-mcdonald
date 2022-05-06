@@ -1,4 +1,4 @@
-namespace RestaurantService;
+namespace RestaurantService{
 
 public class Review
 {
@@ -10,20 +10,19 @@ public class Review
         review = "This place rocks! Eat here often!";
         rating = 5.0;
         author = "Tester";
-        date = DateTime.Now;
+ //       date = DateTime.Now;
         
     }
 
 
     //name string
-    public string Name {get; set;}
+    public string name {get => name; set => name = value;}
 
-    private string review;
-    public string Review {get => review; set => review = value;}
+    public string review {get => review; set => review = value;}
     
 
     //datetime
-    public DateTime Date {get; set;}
+  //  public date {get => Datetime.Now ; set = date = Datetime.Now;}
 
 
     //ratings double
@@ -50,4 +49,5 @@ public class Review
 
 
     
+}
 }
