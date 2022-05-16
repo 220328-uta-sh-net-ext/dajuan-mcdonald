@@ -1,20 +1,20 @@
 using Xunit;
-using RestaurantService;
+using RestaurantServiceBL;
 
-namespace Tests;
+namespace Tests{
 
 public class UnitTest1
 {
-    [SqlServerData(@"juanmcdonald.database.windows.net"), Fact(Skip="Test Azure SQL Server is Active")]
+    [Fact(Skip="Test Azure SQL Server is Active")]
     public void TestConnectionIsCalled()
     {
-        var dbRequest = new Connection();
+       // var dbRequest = new Connection();
     }
 
     [Fact(Skip="Test Add Rating Is Called Once skipped.")]
     public void TestAddRatingsIsCalled()
     {
-        var request = new AddRating();
+       // var request = new AddRating();
 
     }
 
@@ -22,7 +22,7 @@ public class UnitTest1
     [Fact(Skip="Test Search Users Is Called skipped.")]
     public void TestSearchUsersIsCalled()
     {
-        var request = new SearchUsers();
+       // var request = new SearchUsers();
 
     }
 
@@ -30,34 +30,35 @@ public class UnitTest1
     [Fact(Skip="Test Add Review Is Called Once skipped")]
     public void TestAddReviewIsCalledOnce()
     {
-        var request = new AddReview();
+       // var request = new AddReview();
 
     }
 
     [Fact(Skip="Test Add New User Is Called Once skipped")]
     public void TestAddNewUserIsCalledOnce()
     {
-        var request = new AddUser();
+       // var request = new AddUser();
 
     }
 
     [Fact(Skip="Test Search Business By Name Is Called Once skipped")]
     public void TestSearchBusinessByNameIsCalledOnce()
     {
-        var response = new SearchByName();
+        //var response = new SearchByName();
     }
 
     [Fact(Skip="Test Search Business By Rating Is Called Once skipped")]
     public void TestSearchBusinessByIsCalledOnce()
     {
-        var request = new SearchByRating();
+       // var request = new SearchByRating();
 
     }
 
     [Fact(Skip="Test Calculate Ratings Average Is Called Once skipped")]
     public void TestCalculateAverageIsCalledOnce()
     {
-        var request = new CalculateAvg();
+       // var request = new CalculateAvg();
 
     }
+}
 }

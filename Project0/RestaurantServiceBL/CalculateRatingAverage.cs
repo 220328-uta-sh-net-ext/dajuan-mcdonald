@@ -3,11 +3,11 @@ using RestaurantService;
 
 namespace RestaurantServiceBL
 {
-   public class CalculateRatingAverage : IService
+   public class CalculateRatingAverage
    {
       private const double MAXRATING = 5.0;
 
-      public void CalculateAvg(List<double> ratings)
+      public double CalculateAvg(List<double> ratings)
       {
          int size = 0;                                                       
          double sum = 0;                                                    
@@ -20,24 +20,9 @@ namespace RestaurantServiceBL
                                                                                 
            }                                                                   
                                                                                 
-        System.Console.WriteLine(avg);
+        return avg;
          
       }
 
-      // public virtual decimal GetAvgRatingScore(List<decimal> rates)
-      // {
-      //    int size = 0;
-      //    decimal sum = 0;
-      //    decimal avg = sum / size;
-      //
-      //    foreach (var rate in rates)
-      //    {
-      //       size += 1;
-      //       sum += rate;
-      //       
-      //    }
-      //
-      //    return avg;
-      // }
    }
 }
